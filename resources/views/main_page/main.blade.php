@@ -4,7 +4,7 @@
 
 
     <!-- slider_area_start -->
-    <div class="slider_area ">
+    <div class="slider_area " dir='ltr'>
         <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1">
             <div class="container">
                 <div class="row align-items-center justify-content-center " >
@@ -14,10 +14,10 @@
                         </div>
                     </div>
                     <div class="col-xl-6 col-md-6 "  >
-                        <div class="slider_info" >
-                            <h3 class="" > ابحث عن <br>
-                                افضل الكتب للدعوة<br>
-                                الان </h3>
+                        <div class="slider_info text-lg-right" >
+                            <h3 class="" dir=""> ابحث عن افضل <br>
+                                  الكتب للدعوة الان<br>
+                                 </h3>
                             <a href="#" class="boxed_btn">ابدا البحث</a>
                         </div>
                     </div>
@@ -26,6 +26,51 @@
         </div>
     </div>
     <!-- slider_area_end -->
+
+    <div class="our_courses" style="background:#F0F8FF">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-100">
+                        <h3>حياك الله في منصه كتاب الخير </h3>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon">
+                            <i class="flaticon-art-and-design"></i>
+                        </div>
+                        <h3>مكتبه دعوة لديكم كتب دعوية تريد اضافتها في الموقع؟</h3>
+                        
+                        <a href="#" class="btn btn-secondary">تفضل من هنا  </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon blue">
+                            <i class="flaticon-business-and-finance"></i>
+                        </div>
+                        <h3>هل تريد التعرف علين اكثر</h3>
+                        <br>
+                        <a href="#" class="btn btn-secondary">تفضل من هنا  </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-6">
+                    <div class="single_course text-center">
+                        <div class="icon">
+                            <i class="flaticon-premium"></i>
+                        </div>
+                        <h3>تريد كتاب تتعرف به على الاسلام؟</h3>
+                        <br>
+                        <a href="#" class="btn btn-secondary">تفضل من هنا  </a>
+                    </div> 
+                </div>                
+            </div>
+        </div>
+    </div>
 
     <!-- about_area_start -->
     <div class="about_area">
@@ -77,55 +122,7 @@
     </div>
 
     <!-- our_courses_start -->
-    <div class="our_courses" style="background:#F0F8FF">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="section_title text-center mb-100">
-                        <h3>تخصصنا </h3>
-                        <p>نحن نهتم بتوفير كتب الدعوة الي الاديان السماويه  <br>
-                            عن طريق توفير الكتب المتاحه في المكتبات المتنوعه من اجل بحث اسهل ووصول الي هدفك اسرع
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-md-6 col-lg-6">
-                    <div class="single_course text-center">
-                        <div class="icon">
-                            <i class="flaticon-art-and-design"></i>
-                        </div>
-                        <h3>افضل جوده</h3>
-                        <p>
-                            افضل جوده في الكتب المتوفرة والموجوده خلال موقعنا
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-lg-6">
-                    <div class="single_course text-center">
-                        <div class="icon blue">
-                            <i class="flaticon-business-and-finance"></i>
-                        </div>
-                        <h3>افضل جوده</h3>
-                        <p>
-                            افضل المكتبات الموجوده تعرض افضل كتبها في المجال    
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-lg-6">
-                    <div class="single_course text-center">
-                        <div class="icon">
-                            <i class="flaticon-premium"></i>
-                        </div>
-                        <h3>افضل جوده</h3>
-                        <p>
-                           سرعه في البحث والوصل الي بيانات التواصل مع المكتبات
-                        </p>
-                    </div> 
-                </div>                
-            </div>
-        </div>
-    </div>
+   
     <!-- our_courses_end -->
 
     <!-- subscribe_newsletter_Start -->
@@ -133,7 +130,7 @@
     <!-- subscribe_newsletter_end -->
 
     <!-- our_latest_blog_start -->
-    <div class="py-3">
+    {{-- <div class="py-3">
         <div class="container">
             <h2 class="text-center py-3"> ابحث عن كتاب</h2>
             <form class="text-right" dir="">
@@ -183,7 +180,7 @@
                 
             </form>
         </div>
-    </div>
+    </div> --}}
     <!-- our_latest_blog_end -->
     
 @endsection
