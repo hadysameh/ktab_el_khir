@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+    @include('main_page.header')
 
     <!-- slider_area_start -->
     <div class="slider_area " dir='ltr'>
@@ -53,7 +53,7 @@
                         <div class="icon blue">
                             <i class="flaticon-business-and-finance"></i>
                         </div>
-                        <h3>هل تريد التعرف علين اكثر</h3>
+                        <h3>هل تريد التعرف علينا اكثر</h3>
                         <br>
                         <a href="#" class="btn btn-secondary">تفضل من هنا  </a>
                     </div>

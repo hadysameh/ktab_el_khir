@@ -50,60 +50,7 @@
 </head>
 <body>
     <div id="app">
-        <header>
-            <div class="header-area ">
-                <div id="sticky-header" class="main-header-area">
-                    <div class="container-fluid p-0">
-                        <div class="row align-items-center no-gutters">
-                            <div class="col-xl-2 col-lg-2">
-                                <div class="logo-img">
-                                    <a href="index.html">
-                                        
-                                        <span class="text-white" style='font-size: 45px;'>  كتاب<span style="color: #04D2C8;"> الخير</span></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-xl-7 col-lg-7">
-                                <div class="main-menu  d-none d-lg-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                            <li><a class="active" href="index.html">الرئيسيه</a></li>
-                                            
-                                            <li><a href="about.html">حول</a></li>
-                                           
-                                            <li><a href="contact.html">  ابحث</a></li>
-    
-                                            <li>
-                                                <a href="#test-form" class="login popup-with-form">
-                                                    
-                                                    <span>انشاء حساب</span>
-                                                </a>
-                                            </li>
-    
-                                            <li>
-                                                <a href="#test-form" class="login popup-with-form" dir="ltr">
-                                                    <i class="flaticon-user"></i>
-                                                    <span>تسجيل دخول</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                                <div class="log_chat_area d-flex align-items-center" dir="ltr">
-                                    
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
+       
         <main class="">
             @yield('content')
         </main>
