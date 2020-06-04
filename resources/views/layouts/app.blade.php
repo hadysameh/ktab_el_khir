@@ -47,6 +47,7 @@
     <link rel="stylesheet" href="{{ asset('css/slicknav.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 <body>
     <div id="app">
@@ -223,32 +224,32 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 
     <!-- JS here -->
-    <script src="{{ asset('js/vendor/modernizr-3.5.0.min.js') }}"></script>
-    <script  src="{{ asset('js/vendor/jquery-1.12.4.min.js') }}"></script>
-    <script  src="{{ asset('js/popper.min.js') }}"></script>
-    <script  src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script  src="{{ asset('js/owl.carousel.min.js') }}"></script>
-    <script  src="{{ asset('js/isotope.pkgd.min.js') }}"></script>
-    <script  src="{{ asset('js/ajax-form.js') }}"></script>
-    <script  src="{{ asset('js/waypoints.min.js') }}"></script>
-    <script  src="{{ asset('js/jquery.counterup.min.js') }}"></script>
-    <script  src="{{ asset('js/imagesloaded.pkgd.min.js') }}"></script>
-    <script  src="{{ asset('js/scrollIt.js') }}"></script>
-    <script  src="{{ asset('js/jquery.scrollUp.min.js') }}"></script>
-    <script  src="{{ asset('js/wow.min.js') }}"></script>
-    <script  src="{{ asset('js/nice-select.min.js') }}"></script>
-    <script  src="{{ asset('js/jquery.slicknav.min.js') }}"></script>
-    <script  src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
-    <script  src="{{ asset('js/plugins.js') }}"></script>
-    <script  src="{{ asset('js/gijgo.min.js') }}"></script>
+    <script src="{{ asset('mjs/vendor/modernizr-3.5.0.min.js') }}"></script>
+    <script  src="{{ asset('mjs/vendor/jquery-1.12.4.min.js') }}"></script>
+    <script  src="{{ asset('mjs/popper.min.js') }}"></script>
+    <script  src="{{ asset('mjs/bootstrap.min.js') }}"></script>
+    <script  src="{{ asset('mjs/owl.carousel.min.js') }}"></script>
+    <script  src="{{ asset('mjs/isotope.pkgd.min.js') }}"></script>
+    <script  src="{{ asset('mjs/ajax-form.js') }}"></script>
+    <script  src="{{ asset('mjs/waypoints.min.js') }}"></script>
+    <script  src="{{ asset('mjs/jquery.counterup.min.js') }}"></script>
+    <script  src="{{ asset('mjs/imagesloaded.pkgd.min.js') }}"></script>
+    <script  src="{{ asset('mjs/scrollIt.js') }}"></script>
+    <script  src="{{ asset('mjs/jquery.scrollUp.min.js') }}"></script>
+    <script  src="{{ asset('mjs/wow.min.js') }}"></script>
+    <script  src="{{ asset('mjs/nice-select.min.js') }}"></script>
+    <script  src="{{ asset('mjs/jquery.slicknav.min.js') }}"></script>
+    <script  src="{{ asset('mjs/jquery.magnific-popup.min.js') }}"></script>
+    <script  src="{{ asset('mjs/plugins.js') }}"></script>
+    <script  src="{{ asset('mjs/gijgo.min.js') }}"></script>
 
     <!--contact js-->
-    <script  src="{{ asset('js/contact.js') }}"></script>
-    <script  src="{{ asset('js/jquery.ajaxchimp.min.js') }}"></script>
-    <script  src="{{ asset('js/jquery.form.js') }}"></script>
-    <script  src="{{ asset('js/jquery.validate.min.js') }}"></script>
-    <script  src="{{ asset('js/mail-script.js') }}"></script>
+    <script  src="{{ asset('mjs/contact.js') }}"></script>
+    <script  src="{{ asset('mjs/jquery.ajaxchimp.min.js') }}"></script>
+    <script  src="{{ asset('mjs/jquery.form.js') }}"></script>
+    <script  src="{{ asset('mjs/jquery.validate.min.js') }}"></script>
+    <script  src="{{ asset('mjs/mail-script.js') }}"></script>
 
-    <script  src="{{ asset('js/main.js') }}"></script>
+    <script  src="{{ asset('mjs/main.js') }}"></script>
 </body>
 </html>

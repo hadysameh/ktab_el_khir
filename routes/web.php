@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'LayoutController@index')->name('main');
-Route::get('/about', 'LayoutController@about')->name('about')->middleware('auth');;
+Route::get('/about', 'LayoutController@about')->name('about')->middleware('library');
 
 Auth::routes();
 

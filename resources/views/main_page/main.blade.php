@@ -55,7 +55,7 @@
                         </div>
                         <h3>هل تريد التعرف علينا اكثر</h3>
                         <br>
-                        <a href="#" class="btn btn-secondary">تفضل من هنا  </a>
+                        <a href="/about" class="btn btn-secondary">تفضل من هنا  </a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 col-lg-6">
@@ -121,66 +121,5 @@
 
     </div>
 
-    <!-- our_courses_start -->
-   
-    <!-- our_courses_end -->
-
-    <!-- subscribe_newsletter_Start -->
-    
-    <!-- subscribe_newsletter_end -->
-
-    <!-- our_latest_blog_start -->
-    {{-- <div class="py-3">
-        <div class="container">
-            <h2 class="text-center py-3"> ابحث عن كتاب</h2>
-            <form class="text-right" dir="">
-                <label for="" style="font-size: 40px;" class="mx-2">اللغه</label>
-                <select class="form-control form-control-lg">
-                    <option>Large select</option>
-                    <option>Large select</option>
-                </select>
-                <span  class="mx-2"></span>
-                <label for="" style="font-size: 40px;" class="mx-2">ديانه</label>
-                <select class="form-control form-control-lg">
-                    <option>Large select</option>
-                    <option>Large select</option>
-                </select>
-                <span  class="mx-2"></span>
-                <label for="" style="font-size: 40px;" class="mx-2">نوع الكتاب</label>
-                <select class="form-control form-control-lg">
-                    <option>Large select</option>
-                    <option>Large select</option>
-                </select>
-                
-                <span  class="mx-2"></span>
-                <label for="" style="font-size: 40px;" class="mx-2">الدوله</label>
-                <select class="form-control form-control-lg">
-                    <option>Large select</option>
-                    <option>Large select</option>
-                </select>
-                
-                <span  class="mx-2"></span>
-                <label for="" style="font-size: 40px;" class="mx-2">المدينه</label>
-                <select class="form-control form-control-lg">
-                    <option>Large select</option>
-                    <option>Large select</option>
-                </select>
-                
-                <span  class="mx-2"></span>
-                <label for="" style="font-size: 40px;" class="mx-2">طريقه الاستلام</label>
-                <select class="form-control form-control-lg">
-                    <option>Large select</option>
-                    <option>Large select</option>
-                </select>
-                <br>
-                <div class="d-flex justify-content-center">
-                    <input type="submit" value="ابحث" class="btn btn-lg btn-outline-primary">
-                </div>
-
-                
-            </form>
-        </div>
-    </div> --}}
-    <!-- our_latest_blog_end -->
     
 @endsection
