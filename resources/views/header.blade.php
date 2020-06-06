@@ -27,7 +27,10 @@
                                         <li class="px-2"><a href="/librarybooks" style='font-size:20px'>كتبنا</a></li>
                                     @endif
                                    
-                                    <li class="px-2"><a href="contact.html" style='font-size:20px'>  ابحث</a></li>
+                                    @if(Auth::check() && auth()->user()->user_type ==1)
+
+                                        <li class="px-2"><a href="contact.html" style='font-size:20px'>  ابحث</a></li>
+                                    @endif
 
                                     @guest
                                     
