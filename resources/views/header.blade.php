@@ -19,6 +19,13 @@
                                     <li class="px-2"><a class=" " href="/" style='font-size:20px'>الرئيسيه</a></li>
                                     
                                     <li class="px-2"><a href="/about" style='font-size:20px'>حول</a></li>
+                                    
+                                    @if(Auth::check() && auth()->user()->user_type ==2)
+
+                                        <li class="px-2"><a href="/addbook" style='font-size:20px'>اضف كتاب</a></li>
+
+                                        <li class="px-2"><a href="/librarybooks" style='font-size:20px'>كتبنا</a></li>
+                                    @endif
                                    
                                     <li class="px-2"><a href="contact.html" style='font-size:20px'>  ابحث</a></li>
 

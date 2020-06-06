@@ -14,8 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'LayoutController@index')->name('main');
-Route::get('/about', 'LayoutController@about')->name('about')->middleware('library');
-
+Route::get('/about', 'LayoutController@about')->name('about');
+Route::get('/addbook', 'BookController@create')->name('addbook')->middleware('library');
+Route::post('/postbook', 'BookController@store')->name('postbook')->middleware('library');
+Route::get('/librarybooks', 'BookController@index')->name('librarybook')->middleware('library');
+Route::get('/download/{id}', 'BookController@show')->name('download')->middleware('auth');
 Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');

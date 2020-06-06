@@ -64,7 +64,8 @@
                         <div class="footer_widget">
                             <div class="footer_logo">
                                 <a href="#">
-                                    <img src="{{asset('img/logo.png')}}" alt="">
+                                    <span class="text-white" style='font-size: 45px;'>  كتاب<span style="color: #04D2C8;"> الخير</span></span>
+
                                 </a>
                             </div>
                             <p>
