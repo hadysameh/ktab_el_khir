@@ -245,7 +245,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script  src="{{ asset('mjs/gijgo.min.js') }}"></script>
 
     <!--contact js-->
-    <script  src="{{ asset('mjs/contact.js') }}"></script>
+    {{-- <script  src="{{ asset('mjs/contact.js') }}"></script> --}}
     <script  src="{{ asset('mjs/jquery.ajaxchimp.min.js') }}"></script>
     <script  src="{{ asset('mjs/jquery.form.js') }}"></script>
     <script  src="{{ asset('mjs/jquery.validate.min.js') }}"></script>
