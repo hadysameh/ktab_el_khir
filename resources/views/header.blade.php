@@ -26,12 +26,12 @@
 
                                         <li class="px-1"><a href="/librarybooks" style='font-size:20px'>كتبنا</a></li>
 
-                                        <li class="px-1"><a href="contact.html" style='font-size:20px'>  ابحث</a></li>
+                                        <li class="px-1"><a href="/search" style='font-size:20px'>  ابحث</a></li>
                                     @endif
                                    
                                     @if(Auth::check() && auth()->user()->user_type ==1)
 
-                                        <li class="px-1"><a href="contact.html" style='font-size:20px'>  ابحث</a></li>
+                                        <li class="px-1"><a href="/search" style='font-size:20px'>  ابحث</a></li>
                                     @endif
 
                                     @guest
