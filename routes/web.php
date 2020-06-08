@@ -19,6 +19,9 @@ Route::get('/addbook', 'BookController@create')->name('addbook')->middleware(['a
 Route::post('/postbook', 'BookController@store')->name('postbook')->middleware(['auth','library']);
 Route::get('/librarybooks', 'BookController@index')->name('librarybook')->middleware(['auth','library']);
 Route::get('/download/{id}', 'BookController@show')->name('download')->middleware('auth');
+Route::get('/edit/{id}', 'BookController@edit')->name('edit')->middleware(['auth','library']);
+Route::delete('/deletebook/{id}', 'BookController@destroy')->name('deletebook')->middleware(['auth','library']);
+Route::put('/edit/{id}', 'BookController@update')->middleware(['auth','library']);
 Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');

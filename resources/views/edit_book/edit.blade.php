@@ -1,20 +1,16 @@
+
 @extends('layouts.app')
 
 @section('content')
 @include('header')
 
 <div class="bradcam_area breadcam_bg overlay2">
-    <h3>اضف كتاب</h3>
+    <h3>تعديل الكتاب</h3>
 </div>
 
 <div class="container">
-    <bookform-component book='' page_name='add'>
+<bookform-component :book='{{$book}}' page_name='edit'>
         
-        {{-- <slot name='photo'></slot>
-        <slot name='language'></slot> --}}
-        {{-- <slot name='relegion'></slot>
-        <slot name='country'></slot>
-        <slot name='city'></slot> --}}
         @error('name')
                {{-- error works with the validation --}}
             
