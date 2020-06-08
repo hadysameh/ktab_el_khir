@@ -15,38 +15,38 @@
                         <div class="main-menu  d-none d-lg-block">
                             <nav>
                                 <ul id="navigation">
-                                    <li class="px-2"><a class=" " href="/" style='font-size:20px'>الرئيسيه</a></li>
+                                    <li class="px-1"><a class=" " href="/" style='font-size:20px'>الرئيسيه</a></li>
                                     
-                                    <li class="px-2"><a href="/about" style='font-size:20px'>حول</a></li>
+                                    <li class="px-1"><a href="/about" style='font-size:20px'>حول</a></li>
 
                                     @if(Auth::check() && auth()->user()->user_type ==2)
 
-                                        <li class="px-2"><a href="/addbook" style='font-size:20px'>اضف كتاب</a></li>
+                                        <li class="px-1"><a href="/addbook" style='font-size:20px'>اضف كتاب</a></li>
 
-                                        <li class="px-2"><a href="/librarybooks" style='font-size:20px'>كتبنا</a></li>
+                                        <li class="px-1"><a href="/librarybooks" style='font-size:20px'>كتبنا</a></li>
 
-                                        <li class="px-2"><a href="/search" style='font-size:20px'>  ابحث</a></li>
+                                        <li class="px-1"><a href="/search" style='font-size:20px'>  ابحث</a></li>
                                     @endif
 
                                     @if(Auth::check() && auth()->user()->user_type ==1)
 
-                                        <li class="px-2"><a href="/search" style='font-size:20px'>  ابحث</a></li>
+                                        <li class="px-1"><a href="/search" style='font-size:20px'>  ابحث</a></li>
                                     @endif
 
                                     @guest
                                     
                                         @if (Route::has('register'))
                                             
-                                            <li class="px-2"><a href="/register" style='font-size:20px'>انشاء حساب</a></li>
+                                            <li class="px-1"><a href="/register" style='font-size:20px'>انشاء حساب</a></li>
                                         @endif
-                                        <li class="px-2">
+                                        <li class="px-1">
                                             <a href="{{ route('login') }}"  dir="ltr" style='font-size:20px'>
                                                 <i class="flaticon-user"></i>
                                                 <span>تسجيل دخول</span>
                                             </a>
                                         </li>
                                     @else
-                                        <li class="px-2">
+                                        <li class="px-1">
                                             <a class="" href="{{ route('logout') }}" style='font-size:20px'
                                             onclick="event.preventDefault();
                                                             document.getElementById('logout-form').submit();">
