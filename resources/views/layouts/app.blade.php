@@ -69,9 +69,7 @@
                                 </a>
                             </div>
                             <p>
-                                Firmament morning sixth subdue darkness creeping gathered divide our let god moving.
-                                Moving in fourth air night bring upon it beast let you dominion likeness open place day
-                                great.
+                                مؤسسه خيريه تهدف الي نشر الاسلام عن طريق الكتاب 
                             </p>
                             <div class="socail_links">
                                 <ul>
@@ -101,7 +99,7 @@
                         </div>
                     </div>
                     <div class="col-xl-2 offset-xl-1 col-md-6 col-lg-3">
-                        <div class="footer_widget">
+                        {{-- <div class="footer_widget">
                             <h3 class="footer_title">
                                 Courses
                             </h3>
@@ -113,31 +111,27 @@
                                 <li><a href="#">UI/UX</a></li>
                             </ul>
 
-                        </div>
+                        </div> --}}
                     </div>
-                    <div class="col-xl-2 col-md-6 col-lg-2">
+                    <div class="col-xl-2 col-md-6 col-lg-2 text-right">
                         <div class="footer_widget">
                             <h3 class="footer_title">
-                                Resourches
+                                الصفحات
                             </h3>
-                            <ul>
-                                <li><a href="#">Free Adobe XD</a></li>
-                                <li><a href="#">Tutorials</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#"> About</a></li>
-                                <li><a href="#"> Contact</a></li>
+                            <ul >
+                                <li><a href="/about">حول</a></li>
+                                <li><a href="/">الرئيسيه</a></li>
+                                <li><a href="/search">البحث عن كتاب</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="col-xl-3 col-md-6 col-lg-3 text-right">
                         <div class="footer_widget">
                             <h3 class="footer_title">
-                                Address
+                                العنوان
                             </h3>
                             <p>
-                                200, D-block, Green lane USA <br>
-                                +10 367 467 8934 <br>
-                                edumark@contact.com
+                                نعمل حصريا ومن خلال موقعنا الالكتروني
                             </p>
                         </div>
                     </div>

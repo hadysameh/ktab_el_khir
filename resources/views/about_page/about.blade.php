@@ -19,7 +19,7 @@
             <p class="text-center" style="font-size:30px; line-height: 40px">
                 فقط اضغط هنا
                 <div class="text-center">
-                    <a href="#" class="btn btn-lg btn-secondary">ابدا الان </a>
+                    <a href="/search" class="btn btn-lg btn-secondary">ابدا الان </a>
                 </div>
             </p>
         </div>

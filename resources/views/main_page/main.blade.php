@@ -18,7 +18,7 @@
                             <h3 class="" dir=""> ابحث عن افضل <br>
                                   الكتب للدعوة الان<br>
                                  </h3>
-                            <a href="#" class="boxed_btn">ابدا البحث</a>
+                            <a href="/search" class="boxed_btn">ابدا البحث</a>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                         </div>
                         <h3>مكتبه دعوة لديكم كتب دعوية تريد اضافتها في الموقع؟</h3>
                         
-                        <a href="#" class="btn btn-secondary">تفضل من هنا  </a>
+                        <a href="/addbook" class="btn btn-secondary">تفضل من هنا  </a>
                     </div>
                 </div>
                 <div class="col-xl-4 col-md-6 col-lg-6">
@@ -65,7 +65,7 @@
                         </div>
                         <h3>تريد كتاب تتعرف به على الاسلام؟</h3>
                         <br>
-                        <a href="#" class="btn btn-secondary">تفضل من هنا  </a>
+                        <a href="/search" class="btn btn-secondary">تفضل من هنا  </a>
                     </div> 
                 </div>                
             </div>
@@ -81,7 +81,7 @@
                         <h3 class='text-right'>العديد من كتب الدعوه <br>
                             خلال العديد من المكاتب</h3>
                         <p class='text-right'>لدينا العديد من كتب الدعوة التي تنساب جميع الافراد والاجناس والاعمار ايا كانت ديانه الشخص يمكنك الحصول على افضل الكتب المناسبه لك</p>
-                        <a href="#" class="boxed_btn">البحث عن كتاب</a>
+                        <a href="/search" class="boxed_btn">البحث عن كتاب</a>
                     </div>
                 </div>
                 <div class="col-xl-6 offset-xl-1 col-lg-6">

@@ -22,6 +22,8 @@ Route::get('/download/{id}', 'BookController@show')->name('download')->middlewar
 Route::get('/edit/{id}', 'BookController@edit')->name('edit')->middleware(['auth','library']);
 Route::delete('/deletebook/{id}', 'BookController@destroy')->name('deletebook')->middleware(['auth','library']);
 Route::put('/edit/{id}', 'BookController@update')->middleware(['auth','library']);
+Route::get('/search', 'BookController@search')->middleware(['auth']);
+Route::get('/search_results', 'BookController@search_results')->middleware(['auth']);
 Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');

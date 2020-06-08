@@ -191,4 +191,28 @@ class BookController extends Controller
         $book->delete();
         return redirect('/librarybooks'); 
     }
+
+    public function search()
+    {
+        return view('search_book_page.search');
+    }
+
+    public function search_results(Request $request)
+    {
+        // dd($request->all());
+        $data=request()->validate([
+            /*'another' => '',if there more fields and doesn't need to be validated*/
+            'language'=>'required',            
+            'relegion'=>'required',
+            'country'=>'required',
+            'city'=>'required',            
+          ]);
+
+        $books=Book::where('language',$data['language'])
+                    ->orWhere('relegion',$data['relegion'])
+                    ->orWhere('country',$data['country'])
+                    ->orWhere('city',$data['city'])->latest()->paginate(6);
+        // $books=[];
+        return view('search_results_page.result',compact('books'));
+    }
 }
