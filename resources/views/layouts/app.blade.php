@@ -30,6 +30,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/favicon.png') }}" >
     <!-- Place favicon.ico in the root directory -->
@@ -47,7 +49,7 @@
     <link rel="stylesheet" href="{{ asset('css/slicknav.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    
 </head>
 <body>
     <div id="app">
