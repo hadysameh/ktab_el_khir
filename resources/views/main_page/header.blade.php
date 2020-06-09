@@ -15,9 +15,9 @@
                         <div class="main-menu  d-none d-lg-block">
                             <nav>
                                 <ul id="navigation">
-                                    <li class="px-1"><a class=" " href="/" style='font-size:20px'>الرئيسيه</a></li>
+                                    {{-- <li class="px-1"><a class=" " href="/" style='font-size:20px'>الرئيسيه</a></li>
                                     
-                                    <li class="px-1"><a href="/about" style='font-size:20px'>حول</a></li>
+                                    <li class="px-1"><a href="/about" style='font-size:20px'>حول</a></li> --}}
 
                                     @if(Auth::check() && auth()->user()->user_type ==2)
 
