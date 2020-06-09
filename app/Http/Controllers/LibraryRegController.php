@@ -15,7 +15,8 @@ class LibraryRegController extends Controller
             'name'=>'required',
             'email'=>'required',
             'password'=>'required',
-            'password_confirmation'=>'in:'.$request['password_confirmation']
+            'password_confirmation'=>'in:'.$request['password_confirmation'],
+            'phone_number' => ['required', 'string'],
         ]);
 
         User::create([
@@ -23,6 +24,7 @@ class LibraryRegController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'user_type' => $request['user_type'],
+            'phone_number' => $data['phone_number'],
         ]);
 
         return redirect('/');
