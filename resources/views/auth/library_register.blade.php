@@ -16,7 +16,7 @@
                     <div class="card-header">انشاء حساب</div>
     
                     <div class="card-body">
-                        <form method="POST" action="{{ route('register') }}">
+                        <form method="POST" action="library_reg">
                             @csrf
     
                             <div class="form-group row">

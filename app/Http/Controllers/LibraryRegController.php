@@ -3,8 +3,32 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
+use Illuminate\Support\Facades\Hash;
 
 class LibraryRegController extends Controller
 {
-    //
+    public function store(Request $request)
+    {
+        
+        $data=$request->validate([
+            'name'=>'required',
+            'email'=>'required',
+            'password'=>'required',
+            'password_confirmation'=>'in:'.$request['password_confirmation']
+        ]);
+
+        User::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => Hash::make($data['password']),
+            'user_type' => $request['user_type'],
+        ]);
+
+        return redirect('/');
+    }
+
+    public function create(){
+        return view('auth.library_register');
+    }
 }

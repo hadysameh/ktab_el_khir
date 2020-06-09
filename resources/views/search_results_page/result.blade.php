@@ -31,18 +31,19 @@
                                             <div class="courses_info" dir="rtl">
                                                 <span>&ThickSpace;</span>
                                             <h3><a >اسم المكتبه : {{$book->user->name}}</a></h3>
-                                            <h3><a >البريد الالكتروني : {{$book->user->email}}</a></h3>
                                             <h3><a >اسم الكتاب : {{$book->name}}</a></h3>
                                             <h3><a >اللغه : {{$book->language}}</a></h3>
                                             <h3><a >الدين الموجه اليه : {{$book->relegion}}</a></h3>
                                             <h3><a >الدوله المتوفر بها : {{$book->country}}</a></h3>
-                                            <h3><a >المدينه المتوفر بها : {{$book->city}}</a></h3>
+                                            <h3><a >تصنيف الكتاب : {{$book->category}}</a></h3>
+                                            <h3><a >توصيه : {{$book->recommendation}}</a></h3>
                                             <h3><a >نوع نسخه الكتاب : {{$book->pdf ?"الكترونيه":'مطبوعه' }}</a></h3>
                                             @if($book->pdf )
                                                 <a href="/download/{{$book->id}}" class='btn btn-secondary'target="blank">تحميل الكتاب</a>
                                                 
 
                                             @endif
+                                            
                                             <br>
 
                                                 <div class="star_prise d-flex justify-content-between">
