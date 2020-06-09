@@ -47,9 +47,9 @@ class BookController extends Controller
             'book_name'=>'required',
             'book_photo' => ['required', 'image'],
             'book_lang'=>'required',
-            'target_relegion'=>'required',
             'country'=>'required',
-            'city'=>'required',            
+            'target_relegion'=>'required',            
+            'category'=>'required',            
           ]);
 
         // $files_array = [];
@@ -87,7 +87,8 @@ class BookController extends Controller
             'language' => $data['book_lang'],
             'relegion' => $data['target_relegion'],
             'country' => $data['country'],
-            'city' => $data['city'],   
+            'category' => $data['category'],   
+            'recommendation' => $request['recommendation'],  
             'pdf'=>$book_file_path 
           ]);
 
@@ -138,7 +139,7 @@ class BookController extends Controller
             'book_lang'=>'required',
             'target_relegion'=>'required',
             'country'=>'required',
-            'city'=>'required',            
+            'category'=>'required',            
           ]);
 
           if($request->hasFile('book_photo'))
@@ -160,17 +161,16 @@ class BookController extends Controller
               $filename = pathinfo($fileNameWithExt,PATHINFO_FILENAME);
               $extension = $request->file('book_file')->getClientOriginalExtension();
               $fileNameToStore= $filename.'.'.time().'.'.$extension;
-              // $book_file_path=$request->file('book_file')->storeAs('bookpdf',$fileNameToStore);
-              // dd($request->file('book_file'));
               $book_file_path=$request->file('book_file')->store('bookpdf','public');
           }
 
         $book=Book::find($id);
+        // dd($id);
         $book->name= $data['book_name'];
         $book->language=$data['book_lang'];
         $book->relegion=$data['target_relegion'];
         $book->country=$data['country'];
-        $book->city=$data['city'];
+        $book->category=$data['category'];
         $book->photo=$request->hasFile('book_photo')?$book_photo_path:$book->photo;
         $book->pdf=$request->hasFile('book_file')?$book_file_path:$book->pdf;
         
@@ -205,13 +205,13 @@ class BookController extends Controller
             'language'=>'required',            
             'relegion'=>'required',
             'country'=>'required',
-            'city'=>'required',            
+                       
           ]);
 
         $books=Book::where('language',$data['language'])
                     ->orWhere('relegion',$data['relegion'])
-                    ->orWhere('country',$data['country'])
-                    ->orWhere('city',$data['city'])->latest()->paginate(6);
+                    ->orWhere('country',$data['country'])->latest()->paginate(6);
+                    
         // $books=[];
         return view('search_results_page.result',compact('books'));
     }

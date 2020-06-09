@@ -16,7 +16,7 @@ class CheckIfLibrary
     public function handle($request, Closure $next)
     {
         if(Auth::check()){
-            if(auth()->user()->user_type == 2){
+            if(auth()->user()->user_type != 1){
                 return $next($request);
             }
         }

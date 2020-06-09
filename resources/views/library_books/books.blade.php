@@ -42,7 +42,7 @@
                                                                 <span>نسخه مطبوعه</span>
 
                                                             @endif --}}
-                                                            <a href="/edit/{{$book->id}}" class='btn btn-secondary'target="blank">تعديل الكتاب</a>
+                                                            <a href="/edit/{{$book->id}}" class='btn btn-secondary'>تعديل الكتاب</a>
                                                         </span>
                                                     </div>
                                                     <div class="prise">

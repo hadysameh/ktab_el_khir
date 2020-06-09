@@ -20,7 +20,8 @@ class CreateBooksTable extends Migration
             $table->string('language');
             $table->string('relegion');
             $table->string('country');
-            $table->string('city');
+            $table->string('category');
+            $table->string('recommendation')->nullable();
             $table->string('pdf')->nullable();
             $table->timestamps();
         });

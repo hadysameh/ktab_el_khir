@@ -20,7 +20,7 @@
                                     
                                     <li class="px-1"><a href="/about" style='font-size:20px'>حول</a></li>
                                     
-                                    @if(Auth::check() && auth()->user()->user_type ==2)
+                                    @if(Auth::check() && auth()->user()->user_type !=1)
 
                                         <li class="px-1"><a href="/addbook" style='font-size:20px'>اضف كتاب</a></li>
 
