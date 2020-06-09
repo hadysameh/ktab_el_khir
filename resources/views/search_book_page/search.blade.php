@@ -75,6 +75,6 @@
 
 
 
-
+@include('footer')
 
 @endsection

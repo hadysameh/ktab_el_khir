@@ -6,7 +6,7 @@
 
 
 <div class="bradcam_area breadcam_bg overlay2">
-    <h3>انشاء حساب</h3>
+    <h3>انشاء حساب لمكتبه</h3>
 </div>
 <div style="background: #f4f4f4">
     <div class="container" style="padding: 40px 0px 40px 0px"  dir="ltr">
@@ -71,7 +71,7 @@
 
                             
 
-                            <input type="hidden" name="user_type" value="1">
+                            <input type="hidden" name="user_type" value="2">
     
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">

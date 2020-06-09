@@ -13,7 +13,7 @@
                     </div>
                     <div class="col-xl-7 col-lg-7">
                         <div class="main-menu  d-none d-lg-block">
-                            {{-- <nav>
+                            <nav>
                                 <ul id="navigation">
                                     <li class="px-1"><a class=" " href="/" style='font-size:20px'>الرئيسيه</a></li>
                                     
@@ -59,17 +59,17 @@
                                         </li>                                                                                                                                
                                     @endguest                                    
                                 </ul>
-                            </nav> --}}
+                            </nav>
                         </div>
                     </div>
-                    {{-- <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                    <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                         <div class="log_chat_area d-flex align-items-center" dir="ltr">
                             
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="mobile_menu d-block d-lg-none"></div>
-                    </div> --}}
+                    </div>
                 </div>
             </div>
         </div>

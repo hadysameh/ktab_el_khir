@@ -24,6 +24,9 @@ Route::delete('/deletebook/{id}', 'BookController@destroy')->name('deletebook')-
 Route::put('/edit/{id}', 'BookController@update')->middleware(['auth','library']);
 Route::get('/search', 'BookController@search')->middleware(['auth']);
 Route::get('/search_results', 'BookController@search_results')->middleware(['auth']);
+Route::get('/library_reg', function(){
+    return view('auth.library_register');
+})->name('library_reg')->middleware(["auth","library_reg"]);
 Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');

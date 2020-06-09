@@ -16,13 +16,17 @@
                             للتواصل من اجل انشاء حساب مكتبه برجاء التواصل خلال <br>
                             +966 59 857 6644
                         </div>
+                        <br>
+                        <br>
+                        
                     </div>
                     <div class="col-xl-6 col-md-6 "  >
-                        <div class="slider_info text-lg-right" >
+                        <div class="slider_info text-lg-right" dir="rtl">
                             <h3 class="" dir=""> ابحث عن افضل <br>
                                   الكتب للدعوة الان<br>
                                  </h3>
                             <a href="/search" class="boxed_btn">ابدا البحث</a>
+                            <a href="/addbook" class="boxed_btn ">اضف كتاب</a>
                         </div>
                     </div>
                 </div>
