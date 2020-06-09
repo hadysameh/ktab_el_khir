@@ -12,6 +12,10 @@
                         <div class="illastrator_png">
                             <img src="img/banner/edu_ilastration.png" alt="">
                         </div>
+                        <div class="text-center text-white">
+                            للتواصل من اجل انشاء حساب مكتبه برجاء التواصل خلال <br>
+                            +966 59 857 6644
+                        </div>
                     </div>
                     <div class="col-xl-6 col-md-6 "  >
                         <div class="slider_info text-lg-right" >
@@ -27,7 +31,7 @@
     </div>
     <!-- slider_area_end -->
 
-    <div class="our_courses" style="background:#F0F8FF">
+    {{-- <div class="our_courses" style="background:#F0F8FF">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -70,10 +74,10 @@
                 </div>                
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <!-- about_area_start -->
-    <div class="about_area">
+    {{-- <div class="about_area">
         <div class="container">
             <div class="row">
                 <div class="col-xl-5 col-lg-6">
@@ -116,7 +120,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     {{-- <div style="height:70vh;background-image: url('{{asset("img/ktabelkhir.jpg")}}');background-size: cover ;"> --}}
 
     </div>
