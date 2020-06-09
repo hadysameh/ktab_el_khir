@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+
+@include('header')
+<div class="bradcam_area breadcam_bg overlay2">
+    <h3>نسيت كلمه المرور</h3>
+</div>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
