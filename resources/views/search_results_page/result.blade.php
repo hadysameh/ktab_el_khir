@@ -16,7 +16,7 @@
         <div class="container">
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <div class="row ">
+                    <div class="row ">
                             @if(count($books)>0)
                             @foreach ($books as $book)
                                 <div class="col-xl-4 col-lg-4 col-md-6 text-right" >
@@ -72,13 +72,15 @@
                                         {{$books->links()}}
                                     </div>
                                 </div>
-                            </div>
+                            
                             @else
                             <h2 class="text-center w-100">عفوا لم يتم العثور على كتاب ملائم للمعطيات</h2>
                         @endif  
+                    </div>
                 </div>
-               
             </div>
+               
+            
         </div>
     </div>
 </div>
