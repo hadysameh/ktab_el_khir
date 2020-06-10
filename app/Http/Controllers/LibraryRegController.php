@@ -13,7 +13,7 @@ class LibraryRegController extends Controller
         
         $data=$request->validate([
             'name'=>'required',
-            'email'=>'required',
+            'email'=>['required', 'string','unique:users'],
             'password'=>'required',
             'password_confirmation'=>'in:'.$request['password_confirmation'],
             'phone_number' => ['required', 'string'],
