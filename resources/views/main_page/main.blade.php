@@ -12,9 +12,9 @@
                         <div class="illastrator_png">
                             <img src="img/banner/edu_ilastration.png" alt="">
                         </div>
-                        <div class="text-center text-white">
-                            للتواصل من اجل انشاء حساب مكتبه برجاء التواصل خلال <br>
-                            +966 59 857 6644
+                        <div class="text-center text-white" dir="rtl">
+                            للتواصل من اجل انشاء حساب مكتبه برجاء التواصل خلال 
+                            <a href="http://wa.me/966598576644"><img src="{{ asset('img/whats.jpg') }}" alt=""style='max-height:50px'></a>
                         </div>
                         <br>
                         <br>
