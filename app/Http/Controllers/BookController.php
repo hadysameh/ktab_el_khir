@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Book;//means the user in the methods is
 use App\User;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\RequestBookMail;
 
 class BookController extends Controller
 {
@@ -194,7 +196,9 @@ class BookController extends Controller
 
     public function search()
     {
-        return view('search_book_page.search');
+        $books = Book::select('relegion')->get();
+        // dd($books);
+        return view('search_book_page.search',['books'=>$books]);
     }
 
     public function search_results(Request $request)
@@ -215,4 +219,16 @@ class BookController extends Controller
         // $books=[];
         return view('search_results_page.result',compact('books'));
     }
+
+    public function send_email($id){
+
+        $book = Book::find($id);
+        // dd($book->user->email);
+        Mail::to($book->user->email)->send(new RequestBookMail(auth()->user()->id));
+
+        return view('mail.after_sending');
+        
+    }
 }
+
+    

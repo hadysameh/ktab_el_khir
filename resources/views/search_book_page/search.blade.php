@@ -24,7 +24,16 @@
 
           <div class="form-group text-right" dir="rtl">
             <label for="relegion" class="form-label " style="font-size:30px">الديانه الموجه اليها</label>    
-            <input type="text" name="relegion" class="form-control" id="bookname" >  
+            <select name="relegion" class="form-control">
+                @foreach ($books as $book)
+                    <option value="{{$book->relegion}}">
+                        {{$book->relegion}}
+                    </option>
+                    
+                @endforeach
+                
+            </select>
+            
             @error('relegion')
                                             
                     <span class="text-danger">
@@ -45,6 +54,8 @@
                 
             @enderror    
         </div>
+
+       
 
         
           

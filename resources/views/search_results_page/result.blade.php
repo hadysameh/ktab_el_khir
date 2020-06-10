@@ -40,7 +40,10 @@
                                             <h3><a >نوع نسخه الكتاب : {{$book->pdf ?"الكترونيه":'مطبوعه' }}</a></h3>
                                             @if($book->pdf )
                                                 <a href="/download/{{$book->id}}" class='btn btn-secondary'target="blank">تحميل الكتاب</a>
+
+                                            @else
                                                 
+                                            <a href="/send_email/{{$book->id}}" class='btn btn-secondary'target="blank">طلب الكتاب</a>
 
                                             @endif
                                             

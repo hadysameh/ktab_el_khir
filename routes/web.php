@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Mail\RequestBookMail;
 
 Route::get('/', 'LayoutController@index')->name('main');
 Route::get('/about', 'LayoutController@about')->name('about');
@@ -26,6 +27,10 @@ Route::get('/search', 'BookController@search')->middleware(['auth']);
 Route::get('/search_results', 'BookController@search_results')->middleware(['auth']);
 Route::get('/library_reg', 'LibraryRegController@create')->name('library_reg')->middleware(["auth","library_reg"]);
 Route::post('/library_reg', 'LibraryRegController@store')->middleware(["auth","library_reg"]);
+Route::get('/send_email/{id}', 'BookController@send_email')->middleware(['auth']);
+Route::get('/email', function () {
+    return new RequestBookMail(1);
+});
 Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
