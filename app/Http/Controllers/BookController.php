@@ -196,7 +196,7 @@ class BookController extends Controller
 
     public function search()
     {
-        $books = Book::select('relegion')->get();
+        $books = Book::select('relegion')->groupBy('relegion')->get();
         // dd($books);
         return view('search_book_page.search',['books'=>$books]);
     }
@@ -228,6 +228,13 @@ class BookController extends Controller
 
         return view('mail.after_sending');
         
+    }
+
+    public function books_admin()
+    {
+        $books = Book::paginate(6);
+        // dd($books);
+        return view('books_admin.books',['books'=>$books]);
     }
 }
 

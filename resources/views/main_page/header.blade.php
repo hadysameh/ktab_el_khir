@@ -28,6 +28,8 @@
                                     @if(Auth::check() && auth()->user()->user_type ==3)
 
                                         <li class="px-1"><a href="/library_reg" style='font-size:20px'>انشاء حساب مكتبه</a></li>
+
+                                        <li class="px-1"><a href="/books_admin" style='font-size:20px'>الكتب المتوفرة</a></li>
                                     @endif
 
                                     @if(Auth::check() && auth()->user()->user_type ==1)

@@ -4,7 +4,7 @@
 @include('header')
 
 <div class="bradcam_area breadcam_bg overlay2">
-    <h3>كتبنا</h3>
+    <h3>جميع كتب الموقع</h3>
 </div>
 
 <div class="popular_courses plus_padding">

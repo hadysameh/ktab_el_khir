@@ -28,9 +28,11 @@ Route::get('/search_results', 'BookController@search_results')->middleware(['aut
 Route::get('/library_reg', 'LibraryRegController@create')->name('library_reg')->middleware(["auth","library_reg"]);
 Route::post('/library_reg', 'LibraryRegController@store')->middleware(["auth","library_reg"]);
 Route::get('/send_email/{id}', 'BookController@send_email')->middleware(['auth']);
-Route::get('/email', function () {
-    return new RequestBookMail(1);
-});
+Route::get('/books_admin', 'BookController@books_admin')->middleware(['auth',"library_reg"]);
+
+// Route::get('/email', function () {
+//     return new RequestBookMail(1);
+// });
 Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
